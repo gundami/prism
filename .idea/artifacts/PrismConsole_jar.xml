@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PrismConsole:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PrismConsole_jar</output-path>
+    <root id="archive" name="PrismConsole.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="PrismConsole" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/zeroturnaround/zt-exec/1.12/zt-exec-1.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jline/jline/3.20.0/jline-3.20.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
