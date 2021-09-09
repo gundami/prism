@@ -2,7 +2,7 @@
 Prism是基于Haproxy的Minecraft面板服单端口穿透<br/>
 支持一切有特征的tcp协议<br/>
 ## 目前确定支持的有：<br/>
-HTTP(Websocket), SSH, MSTSC, Minecraft, MySQL, PostgreSQL<br/>
+HTTP(Websocket), SSH, MSTSC, Minecraft, PostgreSQL<br/>
 
 ## 结构介绍：<br/>
 FRP负责打通隧道部分，Haproxy为核心，用于协议分流<br/>
