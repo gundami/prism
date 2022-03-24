@@ -22,6 +22,8 @@ public class run {
         String prompt = "PrismConsole> ";
         System.out.println("PrismConsole--A Shell Executor");
         System.out.println("Powered by Gundami");
+        System.out.println("File Location: " + System.getProperty("user.dir"));
+        new utilities().permissionFix(System.getProperty("user.dir"));
         new utilities().exec("AutoStart",CmdMap);
         while (true) {
             String line;

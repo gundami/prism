@@ -45,5 +45,19 @@ public class utilities {
             return false;
         }
     }
+    public void permissionFix(String path) throws IOException, InterruptedException {
+        this.cachedThreadPool.execute(() -> {
+            try {
+                (new ProcessExecutor()).command(new String[] { "chmod", "-R", "777", path + "/bin" }).redirectOutput(Slf4jStream.of("Permission Fix").asInfo()).execute().getExitValue();
+                (new ProcessExecutor()).command(new String[] { "chmod", "-R", "777", path + "/scripts" }).redirectOutput(Slf4jStream.of("Permission Fix").asInfo()).execute().getExitValue();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (TimeoutException e) {
+                e.printStackTrace();
+            }
+        });
+    }
 
 }
